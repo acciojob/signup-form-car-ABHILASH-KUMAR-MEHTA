@@ -8,6 +8,79 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <div class="form-container">
+    <h2>Signup Form</h2>
+    <form method="post">
+      <!-- Name Field -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+
+      <!-- Gender Field -->
+      <div class="form-group">
+        <label>Gender</label>
+        <input type="radio" id="gender_m" name="gender" value="Male" required>
+        <label for="gender_m">Male</label>
+        <input type="radio" id="gender_f" name="gender" value="Female" required>
+        <label for="gender_f">Female</label>
+      </div>
+
+      <!-- Car Brands Field -->
+      <div class="form-group">
+        <label for="cars">Car Brands</label>
+        <select id="cars" name="cars" required>
+          <option value="" disabled selected>--Please choose an option--</option>
+          <option value="toyota">Toyota</option>
+          <option value="honda">Honda</option>
+          <option value="bmw">BMW</option>
+          <option value="tesla">Tesla</option>
+          <option value="ford">Ford</option>
+        </select>
+      </div>
+
+      <!-- Age Field -->
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Age" required>
+      </div>
+
+      <!-- DOB Field -->
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <!-- Phone Number Field -->
+      <div class="form-group">
+        <label for="tel">Phone Number</label>
+        <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+
+      <!-- TOS Agreement -->
+      <div class="form-group">
+        <input type="checkbox" id="tos" name="tos" required>
+        <label for="tos">I agree to the TOS</label>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
